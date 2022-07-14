@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TestRows": {
+      "commandName": "Project",
+      "commandLineArgs": "2"
+    }
+  }
+}

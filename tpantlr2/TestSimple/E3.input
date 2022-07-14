@@ -1,0 +1,3 @@
+class T {
+  int int i;
+}

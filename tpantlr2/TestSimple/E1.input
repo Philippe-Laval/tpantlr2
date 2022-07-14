@@ -1,0 +1,15 @@
+class # T {
+  int i;
+  int j;
+  int k;
+
+  int g(x)
+  {
+	k = 7;
+  }
+
+  int h(x)
+  {
+	8;
+  }
+}
