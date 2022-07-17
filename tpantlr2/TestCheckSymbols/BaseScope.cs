@@ -45,8 +45,10 @@ namespace TestCheckSymbols
 
         public override string ToString()
         {
-            string keys = string.Join(", ", Symbols.Keys);
-            return $"{GetScopeName()}:[{keys}]";
+            var temp = Symbols.Select(o => $"{o.Value.ToString()}").ToList();
+            var result = String.Join(", ", temp);
+
+            return $"{GetScopeName()}:[{result}]";          
         }
 
         public virtual string GetScopeName()

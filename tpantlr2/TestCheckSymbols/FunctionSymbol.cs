@@ -60,9 +60,10 @@ namespace TestCheckSymbols
 
         public override string ToString()
         {
-            var temp = arguments.Values.Select(o => o.ToString());
-            string chaine = string.Join(", ", temp);
-            return $"function{base.ToString()}:[{chaine}]";
+            var temp = arguments.Select(o => $"{o.Value.ToString()}").ToList();
+            var paramResult = string.Join(", ", temp);
+            string result = $"function{base.ToString()}:[{paramResult}]";
+            return result;
         }
     }
 }
