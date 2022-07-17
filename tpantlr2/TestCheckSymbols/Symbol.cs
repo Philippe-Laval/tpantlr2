@@ -23,14 +23,21 @@ namespace TestCheckSymbols
         /// </summary>
         public IScope? Scope { get; set; } = null; 
 
-        public Symbol(String name) { this.Name = name; }
+        public Symbol(String name) 
+        {
+            this.Name = name; 
+        }
 
-        public Symbol(String name, SymbolType type) : this(name)
+        public Symbol(String name, SymbolType type) 
+            : this(name)
         {
             this.Type = type;
         }
         
-        public String GetName() { return Name; }
+        public String GetName() 
+        { 
+            return Name;
+        }
 
         public override string ToString()
         {
