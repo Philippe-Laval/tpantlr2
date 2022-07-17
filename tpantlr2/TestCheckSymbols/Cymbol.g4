@@ -8,7 +8,12 @@ file:   (functionDecl | varDecl)+ ;
 varDecl
     :   type ID ('=' expr)? ';'
     ;
-type:   'float' | 'int' | 'void' ; // user-defined types
+
+// user-defined types
+type: 'float' 
+    | 'int' 
+    | 'void' 
+    ; 
 
 functionDecl
     :   type ID '(' formalParameters? ')' block // "void f(int x) {...}"
@@ -17,6 +22,7 @@ functionDecl
 formalParameters
     :   formalParameter (',' formalParameter)*
     ;
+
 formalParameter
     :   type ID
     ;
