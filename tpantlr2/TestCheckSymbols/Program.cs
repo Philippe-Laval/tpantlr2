@@ -16,7 +16,7 @@ namespace TestCheckSymbols
             return Symbol.SymbolType.tINVALID;
         }
 
-        public static void Error(IToken t, String msg)
+        public static void Error(IToken t, string msg)
         {
             Console.WriteLine($"line {t.Line}:{t.Column} {msg}");
         }

@@ -15,8 +15,9 @@ type: 'float'
     | 'void' 
     ; 
 
+// "void f(int x) {...}"
 functionDecl
-    :   type ID '(' formalParameters? ')' block // "void f(int x) {...}"
+    :   type ID '(' formalParameters? ')' block 
     ;
 
 formalParameters
