@@ -37,8 +37,9 @@ namespace TestCheckSymbols
             {
                 return scope.Resolve(name);
             }
-            
-            return null; // not found
+
+            // not found
+            return null; 
         }
 
         public void Define(Symbol sym)
