@@ -29,7 +29,7 @@ namespace TestCheckSymbols
         public override void EnterFunctionDecl(CymbolParser.FunctionDeclContext ctx)
         {
             String name = ctx.ID().GetText();
-            int typeTokenType = ctx.type().start.Type;
+            int typeTokenType = ctx.type().Start.Type;
             Symbol.SymbolType type = Program.GetType(typeTokenType);
 
             // push new scope by making new one that points to enclosing scope
@@ -75,7 +75,7 @@ namespace TestCheckSymbols
 
         private void DefineVar(CymbolParser.TypeContext typeCtx, IToken nameToken)
         {
-            int typeTokenType = typeCtx.start.Type;
+            int typeTokenType = typeCtx.Start.Type;
             Symbol.SymbolType type = Program.GetType(typeTokenType);
             VariableSymbol var = new VariableSymbol(nameToken.Text, type);
             currentScope?.Define(var); // Define symbol in current scope
