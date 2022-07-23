@@ -11,8 +11,6 @@ namespace TestPredCppStat
     {
         static void Main(string[] args)
         {
-            
-
             Test("input1");
             Test("input2");
         }
@@ -35,8 +33,8 @@ namespace TestPredCppStat
             parser.AddErrorListener(new DiagnosticErrorListener());
 
             // Here's how to make the parser report all ambiguities
-            //parser.Interpreter.PredictionMode = PredictionMode.Sll;
-            parser.Interpreter.PredictionMode = PredictionMode.LlExactAmbigDetection;
+            //parser.Interpreter.PredictionMode = PredictionMode.SLL;
+            parser.Interpreter.PredictionMode = PredictionMode.LL_EXACT_AMBIG_DETECTION;
 
             // Begin parsing at stat rule
             IParseTree tree = parser.stat();
