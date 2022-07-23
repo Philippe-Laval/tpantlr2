@@ -26,7 +26,7 @@
 		<Antlr4 Include="Keywords.g4">
 			<Listener>false</Listener>
 			<Visitor>false</Visitor>
-			<GAtn>true</GAtn>
+			<GAtn>false</GAtn>
 			<Package>TestKeywordsAction</Package>
 			<Error>true</Error>
 		</Antlr4>

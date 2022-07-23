@@ -27,7 +27,7 @@
 		<Antlr4 Include="Cymbol.g4">
 			<Listener>true</Listener>
 			<Visitor>false</Visitor>
-			<GAtn>true</GAtn>
+			<GAtn>false</GAtn>
 			<Package>TestCallGraph</Package>
 			<Error>true</Error>
 		</Antlr4>

@@ -27,7 +27,7 @@
 		<Antlr4 Include="Expr.g4">
 			<Listener>false</Listener>
 			<Visitor>false</Visitor>
-			<GAtn>true</GAtn>
+			<GAtn>false</GAtn>
 			<Package>TestToolExpr</Package>
 			<Error>true</Error>
 		</Antlr4>
