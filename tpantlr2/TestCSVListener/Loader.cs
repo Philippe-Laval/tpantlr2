@@ -62,6 +62,6 @@ namespace TestCSVListener
         {
             _currentRowFieldValues.Add(EMPTY);
         }
-
     }
+    
 }
