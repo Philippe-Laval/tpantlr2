@@ -9,11 +9,7 @@ namespace TestEnum
 {
     public class UnderlineListener : BaseErrorListener
     {
-        public override void SyntaxError(IRecognizer recognizer,
-                    IToken offendingSymbol,
-                    int line, int charPositionInLine,
-                    string msg,
-                    RecognitionException e)
+        public override void SyntaxError(TextWriter output, IRecognizer recognizer, IToken offendingSymbol, int line, int charPositionInLine, string msg, RecognitionException e)
         {
             Console.WriteLine($"line {line}:{charPositionInLine} {msg}");
             UnderlineError(recognizer, offendingSymbol, line, charPositionInLine);
