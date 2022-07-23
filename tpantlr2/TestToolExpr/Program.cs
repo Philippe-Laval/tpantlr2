@@ -38,7 +38,8 @@ namespace TestToolExpr
                 lexer.Line = line;           // notify lexer of input position
                 lexer.Column = 0;
                 CommonTokenStream tokens = new CommonTokenStream(lexer);
-                parser.SetInputStream(tokens); // notify parser of new token stream
+                //parser.SetInputStream(tokens); // notify parser of new token stream
+                parser.TokenStream = tokens;
                 parser.stat();                 // start the parser
                 expr = text_reader.ReadLine();          // see if there's another line
                 line++;
