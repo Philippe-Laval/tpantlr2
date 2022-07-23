@@ -9,11 +9,7 @@ namespace TestAmbig
 {
     public class VerboseListener : BaseErrorListener
     {
-        public override void SyntaxError(IRecognizer recognizer,
-                                IToken offendingSymbol,
-                                int line, int charPositionInLine,
-                                string msg,
-                                RecognitionException e)
+        public override void SyntaxError(TextWriter output, IRecognizer recognizer, IToken offendingSymbol, int line, int charPositionInLine, string msg, RecognitionException e)
         {
             var r = recognizer as Parser;
             if (r != null)

@@ -38,8 +38,8 @@ namespace TestAmbig
             parser.AddErrorListener(new DiagnosticErrorListener());
 
             // Here's how to make the parser report all ambiguities
-            //parser.Interpreter.PredictionMode = PredictionMode.Sll;
-            parser.Interpreter.PredictionMode = PredictionMode.LlExactAmbigDetection;
+            //parser.Interpreter.PredictionMode = PredictionMode.SSL;
+            parser.Interpreter.PredictionMode = PredictionMode.LL_EXACT_AMBIG_DETECTION;
 
             // Begin parsing at rule stat
             IParseTree tree = parser.stat();
