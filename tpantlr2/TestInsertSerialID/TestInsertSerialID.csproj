@@ -23,7 +23,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Antlr4 Include="v.g4">
+		<Antlr4 Include="Java.g4">
 			<Listener>true</Listener>
 			<Visitor>false</Visitor>
 			<GAtn>false</GAtn>
