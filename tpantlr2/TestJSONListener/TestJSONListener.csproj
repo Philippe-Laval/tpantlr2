@@ -27,7 +27,7 @@
 			<Listener>true</Listener>
 			<Visitor>false</Visitor>
 			<GAtn>false</GAtn>
-			<Package>TestEvaluator</Package>
+			<Package>TestJSONListener</Package>
 			<Error>true</Error>
 		</Antlr4>
 	</ItemGroup>
