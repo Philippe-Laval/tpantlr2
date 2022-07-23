@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestPropertyFile
 {
-    public class PropertyFileVisitor: PropertyFileBaseVisitor<int>
+    public class PropertyFileVisitor : PropertyFileBaseVisitor<int>
     {
         public Dictionary<string, string> Props { get; set; } = new Dictionary<string, string>();
 
@@ -16,11 +16,10 @@ namespace TestPropertyFile
             // so VisitProp() doesn’t have to call Visit().
 
             // prop : ID '=' STRING '\n' ;
-            String id = ctx.ID().GetText(); 
+            String id = ctx.ID().GetText();
             String value = ctx.STRING().GetText();
             Props.Add(id, value);
-            return 0; 
+            return 0;
         }
-  
     }
 }
