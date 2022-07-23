@@ -7,28 +7,18 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="input1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="input1">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
 	<ItemGroup>
-		<PackageReference Include="Antlr4.CodeGenerator" Version="4.6.6">
-			<PrivateAssets>all</PrivateAssets>
-			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		</PackageReference>
-		<PackageReference Include="Antlr4.Runtime" Version="4.6.6" />
+		<PackageReference Include="Antlr4.Runtime.Standard" Version="4.10.1" />
+		<PackageReference Include="Antlr4BuildTasks" Version="10.7" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<Antlr4 Update="CppStat.g4">
-			<DefaultCustomToolNamespace>$([MSBuild]::ValueOrDefault('$(RootNamespace).%(DefaultCustomToolNamespace)', '').TrimEnd('.'))</DefaultCustomToolNamespace>
-			<CustomToolNamespace>$([MSBuild]::ValueOrDefault(%(CustomToolNamespace), %(DefaultCustomToolNamespace)))</CustomToolNamespace>
+		<Antlr4 Include="CppStat.g4">
+			<Listener>false</Listener>
+			<Visitor>false</Visitor>
+			<GAtn>false</GAtn>
+			<Package>TestCppStat</Package>
+			<Error>true</Error>
 		</Antlr4>
 	</ItemGroup>
 	
