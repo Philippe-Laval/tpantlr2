@@ -18,18 +18,18 @@
   </ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Antlr4.CodeGenerator" Version="4.6.6">
-			<PrivateAssets>all</PrivateAssets>
-			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		</PackageReference>
-		<PackageReference Include="Antlr4.Runtime" Version="4.6.6" />
+		<Antlr4 Include="LabeledExpr.g4">
+			<Listener>false</Listener>
+			<Visitor>true</Visitor>
+			<GAtn>false</GAtn>
+			<Package>TestLabeledExpr</Package>
+			<Error>true</Error>
+		</Antlr4>
 	</ItemGroup>
 
 	<ItemGroup>
-		<Antlr4 Update="LabeledExpr.g4">
-			<DefaultCustomToolNamespace>$([MSBuild]::ValueOrDefault('$(RootNamespace).%(DefaultCustomToolNamespace)', '').TrimEnd('.'))</DefaultCustomToolNamespace>
-			<CustomToolNamespace>$([MSBuild]::ValueOrDefault(%(CustomToolNamespace), %(DefaultCustomToolNamespace)))</CustomToolNamespace>
-		</Antlr4>
+		<PackageReference Include="Antlr4.Runtime.Standard" Version="4.10.1" />
+		<PackageReference Include="Antlr4BuildTasks" Version="10.7.0" />
 	</ItemGroup>
-	
+
 </Project>

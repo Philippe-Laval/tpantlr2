@@ -25,8 +25,8 @@ namespace TestLabeledExpr
             // Look in obj/Debug/net6.0/HelloParser.cs
             // public RContext r()
 
-            EvalVisitor eval = new EvalVisitor();
-            eval.Visit(tree);
+           EvalVisitor eval = new EvalVisitor();
+           eval.Visit(tree);
         }
     }
 }
