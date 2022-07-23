@@ -21,5 +21,11 @@
 			<Error>true</Error>
 		</Antlr4>
 	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="input1">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
 	
 </Project>
