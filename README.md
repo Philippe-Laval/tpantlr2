@@ -5,6 +5,7 @@ Thanks to Ken Domino, who is maintaining Antlr4BuildTasks to explain how to gene
 
 People should use either Antlr4BuildTasks
 
+```
 > <Project Sdk="Microsoft.NET.Sdk">
 >	<PropertyGroup>
 >		<OutputType>Exe</OutputType>
@@ -25,6 +26,7 @@ People should use either Antlr4BuildTasks
 >		<Antlr4 Include="Hello.g4" />
 >	</ItemGroup>
 > </Project>
+```
 
 Or, add in rules to call the Antlr4 tool in their .csproj files:
 
