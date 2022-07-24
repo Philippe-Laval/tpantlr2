@@ -28,6 +28,7 @@ People should use either Antlr4BuildTasks
 
 Or, add in rules to call the Antlr4 tool in their .csproj files:
 
+```
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
@@ -69,4 +70,4 @@ Or, add in rules to call the Antlr4 tool in their .csproj files:
 		<NoWarn>3021;1701;1702</NoWarn>
 	</PropertyGroup>
 </Project>
-
+```
