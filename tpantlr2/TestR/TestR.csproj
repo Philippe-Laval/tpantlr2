@@ -28,7 +28,7 @@
 			<Visitor>false</Visitor>
 			<GAtn>false</GAtn>
 			<Package>TestR</Package>
-			<Error>true</Error>
+			<Error>false</Error>
 		</Antlr4>
 	</ItemGroup>
 	

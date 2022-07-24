@@ -19,7 +19,7 @@ namespace TestInsertSerialID
         public override void EnterClassBody(JavaParser.ClassBodyContext ctx)
         {
             String field = "\n\tpublic static final long serialVersionUID = 1L;";
-            Rewriter.InsertAfter(ctx.start, field);
+            Rewriter.InsertAfter(ctx.Start, field);
         }
     }
 }

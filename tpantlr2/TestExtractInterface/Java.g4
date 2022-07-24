@@ -543,19 +543,19 @@ expression
     |   expression '&&' expression
     |   expression '||' expression
     |   expression '?' expression ':' expression
-    |   expression
-        ('^='<assoc=right>
-        |'+='<assoc=right>
-        |'-='<assoc=right>
-        |'*='<assoc=right>
-        |'/='<assoc=right>
-        |'&='<assoc=right>
-        |'|='<assoc=right>
-        |'='<assoc=right>
-        |'>' '>' '='<assoc=right>
-        |'>' '>' '>' '='<assoc=right>
-        |'<' '<' '='<assoc=right>
-        |'%='<assoc=right>
+    |<assoc=right>   expression
+        ('^='
+        |'+='
+        |'-='
+        |'*='
+        |'/='
+        |'&='
+        |'|='
+        |'='
+        |'>' '>' '='
+        |'>' '>' '>' '='
+        |'<' '<' '='
+        |'%='
         )
         expression
     ;
@@ -650,7 +650,7 @@ StringLiteral
 
 fragment
 EscapeSequence
-    :   '\\' ('b'|'t'|'n'|'f'|'r'|'\"'|'\''|'\\')
+    :   '\\' ('b'|'t'|'n'|'f'|'r'|'"'|'\''|'\\')
     |   UnicodeEscape
     |   OctalEscape
     ;

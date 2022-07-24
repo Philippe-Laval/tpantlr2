@@ -23,7 +23,7 @@
 			<Visitor>false</Visitor>
 			<GAtn>false</GAtn>
 			<Package>TestExtractInterface</Package>
-			<Error>true</Error>
+			<Error>false</Error>
 		</Antlr4>
 	</ItemGroup>
 
