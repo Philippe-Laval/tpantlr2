@@ -1,7 +1,7 @@
 # tpantlr2
 Examples of the book "The Definitive ANTLR 4 Reference" by Terence Parr translated in C#
 
-Thanks to Ken Domino, who is maintaining Antlr4BuildTasks to explain how to generate code in Visual Studio.
+Thanks to Ken Domino, who is maintaining Antlr4BuildTasks to explain us how to generate code in Visual Studio.
 
 People should use either Antlr4BuildTasks
 
